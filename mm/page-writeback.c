@@ -88,7 +88,11 @@ int vm_highmem_is_dirtyable = 0;
 /*
  * The generator of dirty data starts writeback at this percentage
  */
+<<<<<<< HEAD
 int vm_dirty_ratio = 80;
+=======
+int vm_dirty_ratio = 90;
+>>>>>>> 84f8f2605eb02002edc40b3a74aed7fce6b5951d
 
 /*
  * vm_dirty_bytes starts at 0 (disabled) so that it is a function of
@@ -99,12 +103,16 @@ unsigned long vm_dirty_bytes;
 /*
  * The interval between `kupdate'-style writebacks
  */
+<<<<<<< HEAD
 unsigned int dirty_writeback_interval = 5 * 100; /* centiseconds */
+=======
+unsigned int dirty_writeback_interval = 7 * 100; /* centiseconds */
+>>>>>>> 84f8f2605eb02002edc40b3a74aed7fce6b5951d
 
 /*
  * The longest time for which data is allowed to remain dirty
  */
-unsigned int dirty_expire_interval = 30 * 100; /* centiseconds */
+unsigned int dirty_expire_interval = 40 * 100; /* centiseconds */
 
 /*
  * Flag that makes the machine dump writes/reads and block dirtyings.

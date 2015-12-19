@@ -5165,6 +5165,12 @@ void setup_per_zone_wmarks(void)
 {
 	unsigned long pages_min = min_free_kbytes >> (PAGE_SHIFT - 10);
 	unsigned long pages_low = extra_free_kbytes >> (PAGE_SHIFT - 10);
+<<<<<<< HEAD
+=======
+#else
+	unsigned long pages_low = (8192 + extra_free_kbytes) >> (PAGE_SHIFT - 10);
+#endif	
+>>>>>>> 84f8f2605eb02002edc40b3a74aed7fce6b5951d
 	unsigned long lowmem_pages = 0;
 	struct zone *zone;
 	unsigned long flags;
